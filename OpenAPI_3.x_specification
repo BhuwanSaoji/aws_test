@@ -1,0 +1,147 @@
+openapi: 3.0.0
+info:
+  title: Indian Dishes API
+  version: 1.0.0
+  description: API to manage and search for Indian dishes
+servers:
+  - url: http://localhost:3000/api/dishes
+paths:
+  /:
+    get:
+      summary: Get all dishes or search by query
+      parameters:
+        - in: query
+          name: search
+          schema:
+            type: string
+          description: Query to search dishes by name, ingredients, or other fields
+      responses:
+        200:
+          description: Successfully fetched dishes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Dish'
+        500:
+          description: Internal Server Error
+    post:
+      summary: Save a new dish
+      requestBody:
+        description: New dish details to save
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dish'
+      responses:
+        201:
+          description: Dish created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dish'
+        400:
+          description: Bad request
+        500:
+          description: Internal Server Error
+    delete:
+      summary: Delete a dish by name
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+          description: Name of the dish to delete
+      responses:
+        200:
+          description: Successfully deleted the dish
+        400:
+          description: Bad request (name not provided)
+        500:
+          description: Internal Server Error
+    put:
+      summary: Update a dish
+      requestBody:
+        description: Updated dish details
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Dish'
+      responses:
+        200:
+          description: Dish updated successfully
+        500:
+          description: Internal Server Error
+
+  /find:
+    post:
+      summary: Find dishes by available ingredients
+      requestBody:
+        description: List of available ingredients
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+      responses:
+        200:
+          description: Dishes found with matching ingredients
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Dish'
+        400:
+          description: Bad request (ingredients list empty)
+        500:
+          description: Internal Server Error
+
+components:
+  schemas:
+    Dish:
+      type: object
+      required:
+        - name
+        - ingredients
+        - diet
+        - prep_time
+        - cook_time
+        - flavor_profile
+        - course
+        - state
+        - region
+      properties:
+        name:
+          type: string
+          description: Name of the dish
+        ingredients:
+          type: string
+          description: Ingredients used in the dish
+        diet:
+          type: string
+          description: Diet type (e.g., vegetarian)
+        prep_time:
+          type: integer
+          description: Preparation time in minutes
+        cook_time:
+          type: integer
+          description: Cooking time in minutes
+        flavor_profile:
+          type: string
+          description: Flavor profile (e.g., sweet, savory)
+        course:
+          type: string
+          description: Course of the dish (e.g., dessert, main course)
+        state:
+          type: string
+          description: State of origin of the dish
+        region:
+          type: string
+          description: Region of origin of the dish

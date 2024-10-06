@@ -1,0 +1,306 @@
+2024-10-02 20:35:37 [error]: Not Found
+2024-10-02 20:41:27 [error]: error
+2024-10-02 20:41:27 [error]: Error
+2024-10-02 21:23:49 [error]: ingredients.filter is not a function
+2024-10-02 21:23:49 [error]: Something went wrong
+2024-10-02 21:24:10 [error]: ingredients.filter is not a function
+2024-10-02 21:24:10 [error]: Something went wrong
+2024-10-02 22:18:47 [error]: ENOENT: no such file or directory, open '../data/indian_food.json'
+2024-10-02 22:18:47 [error]: Something went wrong
+2024-10-02 22:19:36 [error]: ENOENT: no such file or directory, open 'srcdataindian_food.json'
+2024-10-02 22:19:36 [error]: Something went wrong
+2024-10-03 00:15:09 [error]: Error
+2024-10-03 00:20:07 [error]: error
+2024-10-03 00:22:06 [error]: error
+2024-10-03 00:22:21 [error]: error
+2024-10-03 00:23:12 [error]: error
+2024-10-03 00:49:09 [error]: Error
+2024-10-03 00:55:10 [error]: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "ingredients"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "undefined",
+            "path": [
+              "diet"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "undefined",
+            "path": [
+              "diet"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "diet"
+    ],
+    "message": "Invalid input"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "prep_time"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "string",
+            "path": [
+              "state"
+            ],
+            "message": "Expected number, received string"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "West Bengal",
+            "code": "invalid_literal",
+            "expected": -1,
+            "path": [
+              "state"
+            ],
+            "message": "Invalid literal value, expected -1"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "state"
+    ],
+    "message": "Invalid input"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "string",
+            "path": [
+              "region"
+            ],
+            "message": "Expected number, received string"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "East22222222",
+            "code": "invalid_literal",
+            "expected": -1,
+            "path": [
+              "region"
+            ],
+            "message": "Invalid literal value, expected -1"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "region"
+    ],
+    "message": "Invalid input"
+  }
+]
+2024-10-03 00:56:23 [error]: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "ingredients"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "undefined",
+            "path": [
+              "diet"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "undefined",
+            "path": [
+              "diet"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "diet"
+    ],
+    "message": "Invalid input"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "prep_time"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "string",
+            "path": [
+              "state"
+            ],
+            "message": "Expected number, received string"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "West Bengal",
+            "code": "invalid_literal",
+            "expected": -1,
+            "path": [
+              "state"
+            ],
+            "message": "Invalid literal value, expected -1"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "state"
+    ],
+    "message": "Invalid input"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "string",
+            "path": [
+              "region"
+            ],
+            "message": "Expected number, received string"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "East22222222",
+            "code": "invalid_literal",
+            "expected": -1,
+            "path": [
+              "region"
+            ],
+            "message": "Invalid literal value, expected -1"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "region"
+    ],
+    "message": "Invalid input"
+  }
+]
+2024-10-03 01:04:18 [error]: error
+2024-10-03 01:05:23 [error]: error
+2024-10-03 01:06:38 [error]: error
+2024-10-03 19:13:04 [error]: Endpoint not found!!
+2024-10-03 22:27:48 [error]: Endpoint not found!!
+2024-10-03 22:29:38 [error]: Username and password doesn't match! 
+2024-10-03 22:33:29 [error]: User not found
+2024-10-03 22:36:19 [error]: User not found
+2024-10-03 22:36:43 [error]: Endpoint not found!!
+2024-10-04 11:57:02 [error]: [object Object]
+2024-10-04 11:59:47 [error]: Username and password doesn't match! 
+2024-10-04 14:26:15 [error]: User not found
+2024-10-04 14:43:26 [error]: Endpoint not found!!
+2024-10-04 14:43:37 [error]: Endpoint not found!!
+2024-10-04 14:43:37 [error]: Endpoint not found!!
+2024-10-04 14:43:55 [error]: User not found
+2024-10-04 14:43:59 [error]: User not found
+2024-10-04 15:58:17 [error]: value.toLoweCase is not a function
+2024-10-04 15:58:17 [error]: Something went wrong
+2024-10-04 17:28:19 [error]: Cannot read properties of undefined (reading 'toString')
+2024-10-04 17:28:19 [error]: Something went wrong
+2024-10-04 17:30:00 [error]: Cannot read properties of undefined (reading 'toString')
+2024-10-04 17:30:00 [error]: Something went wrong
+2024-10-04 17:37:18 [error]: User not found
+2024-10-04 19:17:39 [error]: User not found
+2024-10-04 19:20:17 [error]: Endpoint not found!!
+2024-10-04 19:21:04 [error]: Endpoint not found!!
